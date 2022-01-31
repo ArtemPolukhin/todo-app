@@ -1,0 +1,23 @@
+:root {
+  font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #00354e;
+  letter-spacing: .04rem;
+}
+
+.App {
+  margin: auto;
+  padding: .1px;
+  min-width: 40rem;
+  max-width: 60rem;
+  background: #00354e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .4rem;
+}
+/*# sourceMappingURL=App.css.map */

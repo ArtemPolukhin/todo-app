@@ -1,0 +1,176 @@
+.form-create-task {
+  display: -ms-grid;
+  display: grid;
+  gap: .5rem;
+  -ms-grid-columns: 1.5fr 1fr 1.25fr 6rem;
+      grid-template-columns: 1.5fr 1fr 1.25fr 6rem;
+  padding-right: .1rem;
+}
+
+.form-create-task * {
+  display: block;
+}
+
+.form-create-task textarea {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: .5rem;
+  text-align: right;
+  resize: none;
+  background: #10506d;
+  color: wheat;
+}
+
+.form-create-task textarea::-webkit-input-placeholder {
+  color: wheat;
+}
+
+.form-create-task textarea:-ms-input-placeholder {
+  color: wheat;
+}
+
+.form-create-task textarea::-ms-input-placeholder {
+  color: wheat;
+}
+
+.form-create-task textarea::placeholder {
+  color: wheat;
+}
+
+.user-input {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: userinput;
+}
+
+.datetime {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: datetime;
+  background: #10506d;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  padding-right: .1rem;
+}
+
+.priority {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: priority;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: .4rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.priority .priority-level {
+  line-height: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  border-radius: .5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.priority .priority-level span {
+  pointer-events: none;
+}
+
+.priority .priority-level:nth-child(1) {
+  border: 0.13rem solid rgba(240, 128, 128, 0.74);
+  color: white;
+}
+
+.priority .priority-level:nth-child(1):hover {
+  background: rgba(240, 128, 128, 0.74);
+}
+
+.priority .priority-level:nth-child(2) {
+  border: 0.13rem solid rgba(128, 186, 240, 0.712);
+  color: white;
+}
+
+.priority .priority-level:nth-child(2):hover {
+  background: rgba(128, 186, 240, 0.712);
+}
+
+.priority .priority-level:nth-child(3) {
+  border: 0.13rem solid rgba(201, 119, 255, 0.747);
+  color: white;
+}
+
+.priority .priority-level:nth-child(3):hover {
+  background: rgba(201, 119, 255, 0.747);
+}
+
+.task-add {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: taskadd;
+  border: 0.2rem solid rgba(11, 137, 175, 0.808);
+  border-radius: 0.5rem;
+  background: #10506d;
+  color: wheat;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.task-add:active {
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 2px solid #009669;
+  background: rgba(0, 255, 115, 0.342);
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
+}
+
+.categories {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: categories;
+  background: #10506d;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: .2rem;
+}
+
+.categories:focus {
+  border: none;
+  outline: none;
+}
+
+.form-create-task {
+      grid-template-areas: 'userinput userinput  userinput  taskadd' 'userinput userinput  userinput  taskadd' 'priority  categories datetime   taskadd';
+}
+
+.selected-priority-level {
+  background: #10506d;
+}
+/*# sourceMappingURL=InputForm.css.map */
